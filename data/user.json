@@ -1,0 +1,15 @@
+[
+ {
+  "username": "admin",
+  "password": "111111",
+  "realName": "超级管理员",
+  "telephone": null,
+  "mail": "admin@servision.com.cn",
+  "userType": 0,
+  "expirationTime": 1577721600000,
+  "enterpriseCode": "SH-Servision",
+  "enterpriseName": "上海事成软件股份有限公司",
+  "enterpriseAddress": "浦东新区张江",
+  "userTypeName": "EPC管理用户"
+ }
+]

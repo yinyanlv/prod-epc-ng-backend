@@ -1,0 +1,78 @@
+[
+ {
+  "code": "1",
+  "name": "发动机",
+  "subGroup": [
+   {
+    "code": "1101",
+    "name": "发动机总成",
+    "images": [
+     {
+      "code": "1101-C01",
+      "name": "发动机总成",
+      "note": null,
+      "svgFilename": "1101-C01.svg",
+      "svgFilenameCode": "1101-C01",
+      "merge": false,
+      "svgFile": "http://localhost:3000/images/1101-C01.svg",
+      "gifFile": "http://localhost:3000/images/1101-C01.jpg"
+     }
+    ]
+   },
+   {
+    "code": "1107",
+    "name": "安装支架",
+    "images": [
+     {
+      "code": "1107-C01",
+      "name": "安装支架",
+      "note": null,
+      "svgFilename": "1107-C01.svg",
+      "svgFilenameCode": "1107-C01",
+      "merge": false,
+      "svgFile": "http://localhost:3000/images/1107-C01.svg",
+      "gifFile": "http://localhost:3000/images/1107-C01.jpg"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "2",
+  "name": "燃油供给",
+  "subGroup": [
+   {
+    "code": "2101",
+    "name": "油箱及加油管路",
+    "images": [
+     {
+      "code": "2101-C01",
+      "name": "油箱及加油管路",
+      "note": null,
+      "svgFilename": "2101-C01.svg",
+      "svgFilenameCode": "2101-C01",
+      "merge": false,
+      "svgFile": "http://localhost:3000/images/2101-C01.svg",
+      "gifFile": "http://localhost:3000/images/2101-C01.jpg"
+     }
+    ]
+   },
+   {
+    "code": "2102",
+    "name": "燃油泵",
+    "images": [
+     {
+      "code": "2102-C01",
+      "name": "燃油泵",
+      "note": null,
+      "svgFilename": "2102-C01.svg",
+      "svgFilenameCode": "2102-C01",
+      "merge": false,
+      "svgFile": "http://localhost:3000/images/2102-C01.svg",
+      "gifFile": "http://localhost:3000/images/2102-C01.jpg"
+     }
+    ]
+   }
+  ]
+ }
+]

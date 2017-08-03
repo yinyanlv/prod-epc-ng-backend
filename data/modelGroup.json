@@ -1,0 +1,604 @@
+[
+ {
+  "brandCode": "P01",
+  "brandName": "北京",
+  "seriesCode": "B40V",
+  "seriesName": "BJ40",
+  "modelGroupCode": "B40VB1K",
+  "modelGroupName": "2.4L 5MT 基本型",
+  "models": [
+   {
+    "modelCode": "B40VCDB1K001",
+    "modelName": " 国4 不带限滑差速器R16铝轮"
+   },
+   {
+    "modelCode": "B40VCDB1Z001",
+    "modelName": " 国5 不带限滑差速器R16铝轮"
+   }
+  ]
+ },
+ {
+  "brandCode": "P01",
+  "brandName": "北京",
+  "seriesCode": "B40V",
+  "seriesName": "BJ40",
+  "modelGroupCode": "B40VC1K",
+  "modelGroupName": "2.4L 5MT 舒适型",
+  "models": [
+   {
+    "modelCode": "B40VCDC1K001",
+    "modelName": " 国4 带限滑差速器R17铝轮"
+   },
+   {
+    "modelCode": "B40VCDC1Z001",
+    "modelName": " 国5 带限滑差速器R17铝轮"
+   }
+  ]
+ },
+ {
+  "brandCode": "P01",
+  "brandName": "北京",
+  "seriesCode": "B40L",
+  "seriesName": "B40L",
+  "modelGroupCode": "B40VB1K",
+  "modelGroupName": "2.4L 5MT 基本型",
+  "models": [
+   {
+    "modelCode": "B40VCDB1K001",
+    "modelName": " 国4 不带限滑差速器R16铝轮"
+   },
+   {
+    "modelCode": "B40VCDB1Z001",
+    "modelName": " 国5 不带限滑差速器R16铝轮"
+   }
+  ]
+ },
+ {
+  "brandCode": "P01",
+  "brandName": "北京",
+  "seriesCode": "B40L",
+  "seriesName": "B40L",
+  "modelGroupCode": "B40VC1K",
+  "modelGroupName": "2.4L 5MT 舒适型",
+  "models": [
+   {
+    "modelCode": "B40VCDC1K001",
+    "modelName": " 国4 带限滑差速器R17铝轮"
+   }
+  ]
+ },
+ {
+  "brandCode": "P01",
+  "brandName": "北京",
+  "seriesCode": "B80C",
+  "seriesName": "B80C",
+  "modelGroupCode": "B80CP5T",
+  "modelGroupName": "2.3T 6AT 尊贵型",
+  "models": [
+   {
+    "modelCode": "B80CFFP5T001",
+    "modelName": "4驱 四驱"
+   }
+  ]
+ },
+ {
+  "brandCode": "P01",
+  "brandName": "北京",
+  "seriesCode": "B80C",
+  "seriesName": "B80C",
+  "modelGroupCode": "B80CP5Y",
+  "modelGroupName": "2.3T 6MT 尊贵型",
+  "models": [
+   {
+    "modelCode": "B80CFFP5Y001",
+    "modelName": "4驱 四驱"
+   }
+  ]
+ },
+ {
+  "brandCode": "P01",
+  "brandName": "北京",
+  "seriesCode": "B80D",
+  "seriesName": "B80D",
+  "modelGroupCode": "B80DE1V",
+  "modelGroupName": "柴油版 2.8T 6MT 豪华型",
+  "models": [
+   {
+    "modelCode": "B80DFDE1V001",
+    "modelName": "4驱 2.8TDi四驱两门"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C30D",
+  "seriesName": "E系列两厢",
+  "modelGroupCode": "C30DC1A",
+  "modelGroupName": "1.3L 5MT 舒适型",
+  "models": [
+   {
+    "modelCode": "C30DEBC2J005",
+    "modelName": " 国4 天窗版CROSS"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C30D",
+  "seriesName": "E系列两厢",
+  "modelGroupCode": "C30DD1C",
+  "modelGroupName": "1.5L 5MT 时尚型",
+  "models": [
+   {
+    "modelCode": "C30DEBD2K005",
+    "modelName": " 国4 时尚版CROSS6.5寸屏"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C30D",
+  "seriesName": "E系列两厢",
+  "modelGroupCode": "C30DD1D",
+  "modelGroupName": "1.5L 4AT 时尚型",
+  "models": [
+   {
+    "modelCode": "C30DEBD2L009",
+    "modelName": " 国4 时尚版CROSS6.5寸屏"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-2",
+  "seriesName": "D20两厢",
+  "modelGroupCode": "D202B1A",
+  "modelGroupName": "1.3L 5MT 基本型",
+  "models": [
+   {
+    "modelCode": "C30DEBB2M003",
+    "modelName": "国5 收音机"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-2",
+  "seriesName": "D20两厢",
+  "modelGroupCode": "D202C1A",
+  "modelGroupName": "1.3L 5MT 舒适型",
+  "models": [
+   {
+    "modelCode": "C30DEBC2J003",
+    "modelName": "国4 收音机"
+   },
+   {
+    "modelCode": "C30DEBC2J004",
+    "modelName": "国4 天窗版收音机"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-2",
+  "seriesName": "D20两厢",
+  "modelGroupCode": "D202C1C",
+  "modelGroupName": "1.5L 5MT 舒适型",
+  "models": [
+   {
+    "modelCode": "C30DEBC2K006",
+    "modelName": "国4 天窗版收音机"
+   },
+   {
+    "modelCode": "C30DEBC2K007",
+    "modelName": "国4 收音机"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-2",
+  "seriesName": "D20两厢",
+  "modelGroupCode": "D202C1D",
+  "modelGroupName": "1.5L 4AT 舒适型",
+  "models": [
+   {
+    "modelCode": "C30DEBC2L005",
+    "modelName": "国4 收音机"
+   },
+   {
+    "modelCode": "C30DEBC2P005",
+    "modelName": "国5 收音机"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-2",
+  "seriesName": "D20两厢",
+  "modelGroupCode": "D202D1C",
+  "modelGroupName": "1.5L 5MT 时尚型",
+  "models": [
+   {
+    "modelCode": "C30DEBD2K003",
+    "modelName": "国4 6.5寸屏"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-2",
+  "seriesName": "D20两厢",
+  "modelGroupCode": "D202D1D",
+  "modelGroupName": "1.5L 4AT 时尚型",
+  "models": [
+   {
+    "modelCode": "C30DEBD2L005",
+    "modelName": "国4 6.5寸屏"
+   },
+   {
+    "modelCode": "C30DEBD2P005",
+    "modelName": "国5 6.5寸屏"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-3",
+  "seriesName": "D20 三厢",
+  "modelGroupCode": "D203C1A",
+  "modelGroupName": "1.3L 5MT 舒适型",
+  "models": [
+   {
+    "modelCode": "C31DECC2J003",
+    "modelName": "国4 收音机"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-3",
+  "seriesName": "D20 三厢",
+  "modelGroupCode": "D203B1A",
+  "modelGroupName": "1.3L 5MT 基本型",
+  "models": [
+   {
+    "modelCode": "C31DECB2J002",
+    "modelName": "国4 收音机"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-3",
+  "seriesName": "D20 三厢",
+  "modelGroupCode": "D203C1C",
+  "modelGroupName": "1.5L 5MT 舒适型",
+  "models": [
+   {
+    "modelCode": "C31DECC2K006",
+    "modelName": "国4 天窗版收音机"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-3",
+  "seriesName": "D20 三厢",
+  "modelGroupCode": "D203C1D",
+  "modelGroupName": "1.5L 4AT 舒适型",
+  "models": [
+   {
+    "modelCode": "C31DECC2L005",
+    "modelName": "国4 收音机"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-3",
+  "seriesName": "D20 三厢",
+  "modelGroupCode": "D203D1C",
+  "modelGroupName": "1.5L 5MT 时尚型",
+  "models": [
+   {
+    "modelCode": "C31DECD2K001",
+    "modelName": "国4 6.5寸屏"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "D20-3",
+  "seriesName": "D20 三厢",
+  "modelGroupCode": "D203D1D",
+  "modelGroupName": "1.5L 4AT 时尚型",
+  "models": [
+   {
+    "modelCode": "C31DECD2L005",
+    "modelName": "国4 6.5寸屏"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C50E",
+  "seriesName": "D50",
+  "modelGroupCode": "C50EB1C",
+  "modelGroupName": "1.5L 5MT 基本型",
+  "models": [
+   {
+    "modelCode": "C50EDCB1C006",
+    "modelName": " 国4 CNG版出租车"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C50E",
+  "seriesName": "D50",
+  "modelGroupCode": "C50EB1W",
+  "modelGroupName": "1.5L CVT 基本型",
+  "models": [
+   {
+    "modelCode": "C50EDCB2R005",
+    "modelName": " 国5 标准超值导航版DVD后装"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C50E",
+  "seriesName": "D50",
+  "modelGroupCode": "C50EC1C",
+  "modelGroupName": "1.5L 5MT 舒适型",
+  "models": [
+   {
+    "modelCode": "C50EECC2N005",
+    "modelName": " 国5 DVD后装"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C50E",
+  "seriesName": "D50",
+  "modelGroupCode": "C50EC1W",
+  "modelGroupName": "1.5L CVT 舒适型",
+  "models": [
+   {
+    "modelCode": "C50EFCC2R001",
+    "modelName": " 国5 2015款"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C50E",
+  "seriesName": "D50",
+  "modelGroupCode": "C50ED1C",
+  "modelGroupName": "1.5L 5MT 时尚型",
+  "models": [
+   {
+    "modelCode": "C50EFCD2N001",
+    "modelName": " 国5 2015款"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C50E",
+  "seriesName": "D50",
+  "modelGroupCode": "C50ED1W",
+  "modelGroupName": "1.5L CVT 时尚型",
+  "models": [
+   {
+    "modelCode": "C50EFCD2R001",
+    "modelName": " 国5 2015款"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C50E",
+  "seriesName": "D50",
+  "modelGroupCode": "C50EE1W",
+  "modelGroupName": "1.5L CVT 豪华型",
+  "models": [
+   {
+    "modelCode": "C50EFCE2R001",
+    "modelName": " 国5 2015款"
+   }
+  ]
+ },
+ {
+  "brandCode": "P02",
+  "brandName": "绅宝",
+  "seriesCode": "C50E",
+  "seriesName": "D50",
+  "modelGroupCode": "C50EN4E",
+  "modelGroupName": "1.5L 5MT 导航版",
+  "models": [
+   {
+    "modelCode": "C50EFCN4F001",
+    "modelName": " 国5 超值导航版"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "C61XM06",
+  "seriesName": "S50",
+  "modelGroupCode": "S504A91TC",
+  "modelGroupName": "欢动精英型/4A91T",
+  "models": [
+   {
+    "modelCode": "C61XGUC4T006",
+    "modelName": "4A91T/6MT/国V 欢动精英型 9英寸中控屏+黑色仪表板+亮棕色皮质座椅"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "C61XM06",
+  "seriesName": "S50",
+  "modelGroupCode": "S504A91TE",
+  "modelGroupName": "欢动尊贵型/4A91T",
+  "models": [
+   {
+    "modelCode": "C61XGUE4T001",
+    "modelName": "4A91T/6MT/国V 欢动尊贵型 黑色仪表板+亮棕色座椅"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "C61XM06",
+  "seriesName": "S50",
+  "modelGroupCode": "S504A91TU",
+  "modelGroupName": "乐动豪华型/4A91T",
+  "models": [
+   {
+    "modelCode": "C61XGUU4T001",
+    "modelName": "4A91T/6MT/国V 乐动豪华型 深棕色上仪表板+黑色下仪表板+深棕色座椅"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "C61XM06",
+  "seriesName": "S50",
+  "modelGroupCode": "S504A91TM",
+  "modelGroupName": "乐动尊享型/4A91T",
+  "models": [
+   {
+    "modelCode": "C61XGUM4T001",
+    "modelName": "4A91T/6MT/国V 乐动尊享型 深棕色上仪表板+黑色下仪表板+深棕色座椅"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "M20",
+  "seriesName": "M20（银翔）",
+  "modelGroupCode": "M20415AK",
+  "modelGroupName": "经济型/415A",
+  "models": [
+   {
+    "modelCode": "M30TDLB9A010",
+    "modelName": "经济型8人座"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "M20",
+  "seriesName": "M20（银翔）",
+  "modelGroupCode": "M20415AL",
+  "modelGroupName": "实用型/415A",
+  "models": [
+   {
+    "modelCode": "M40SEVL3A001",
+    "modelName": "实用型5人座"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "M20",
+  "seriesName": "M20（银翔）",
+  "modelGroupCode": "M20415BB",
+  "modelGroupName": "基本型/415B",
+  "models": [
+   {
+    "modelCode": "M30TDLB9B001",
+    "modelName": "基本型7人座"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "M20",
+  "seriesName": "M20（银翔）",
+  "modelGroupCode": "M20415BS",
+  "modelGroupName": "标准型/415B",
+  "models": [
+   {
+    "modelCode": "M30TDLB9B004",
+    "modelName": "标准型7人座"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "M20",
+  "seriesName": "M20（银翔）",
+  "modelGroupCode": "M20415BC",
+  "modelGroupName": "舒适型/415B",
+  "models": [
+   {
+    "modelCode": "M30TDLC9B001",
+    "modelName": "舒适型7人座"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "M20",
+  "seriesName": "M20（银翔）",
+  "modelGroupCode": "M20415BE",
+  "modelGroupName": "豪华型/415B",
+  "models": [
+   {
+    "modelCode": "M30TDLE9B001",
+    "modelName": "豪华型7人座"
+   }
+  ]
+ },
+ {
+  "brandCode": "WEIWANG",
+  "brandName": "北汽威旺",
+  "seriesCode": "M20",
+  "seriesName": "M20（银翔）",
+  "modelGroupCode": "M20415BH",
+  "modelGroupName": "超豪华型/415B",
+  "models": [
+   {
+    "modelCode": "M40SELH3B001",
+    "modelName": "超豪华型7人座"
+   }
+  ]
+ }
+]
