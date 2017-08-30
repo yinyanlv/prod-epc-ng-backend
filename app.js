@@ -3,13 +3,17 @@ let path = require('path');
 let favicon = require('serve-favicon');
 let logger = require('morgan');
 let cookieParser = require('cookie-parser');
+let session = require('express-session');
+let MongoStore = require('connect-mongo')(session);
 let bodyParser = require('body-parser');
 let compression = require('compression');
 let gu = require('guthrie-js');
 let routesMap = require('./routes/routesMap');
-let db = require('./common/db');
+let config = require('./config');
 
 let app = express();
+
+require('./common/db');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,6 +34,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
+app.use(session(Object.assign(config.session, {
+  store: new MongoStore({url: config.dbMap.session})
+})));
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -39,6 +46,7 @@ routesMap(router);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
+
   let err = new Error('Not Found');
   err.status = 404;
 
@@ -47,14 +55,7 @@ app.use(function (req, res, next) {
 
 // error handler
 app.use(function (err, req, res, next) {
-  // set locals, only providing error in development
-  // res.locals.message = err.message;
-  // res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  // res.status(err.status || 500);
-  // res.render('error/error');
-
+console.log(err);
   res.render('master/index');
 });
 
