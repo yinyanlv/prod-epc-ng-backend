@@ -9,9 +9,7 @@ loginController.actions = {
       let isExists = yield userModel.isExists(req.body.username, req.body.password);
 
       res.send({
-        data: {
-          success: isExists
-        }
+        success: isExists
       });
     }
   }
