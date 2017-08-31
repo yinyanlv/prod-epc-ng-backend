@@ -22,7 +22,8 @@ app.set('view engine', 'ejs');
 
 // 允许跨域访问
 app.use(cors({
-  credentials: true
+  origin: ['http://localhost:4200'],  // 客户端withCredentials为true时，服务器端allow origin，必须是一个具体的域名列表，不能为*
+  credentials: true  // 解决ajax跨域时，session在各请求间不共享，总是新建一条的问题
 }));
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

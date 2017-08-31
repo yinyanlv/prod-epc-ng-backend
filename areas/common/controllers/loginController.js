@@ -9,11 +9,6 @@ loginController.actions = {
 
       if (!req.session.loginErrorCount) req.session.loginErrorCount = 0;
 
-      console.log('*******');
-      console.log(req.session);
-      console.log(req.session.loginErrorCount);
-      console.log(req.session.captchaText);
-      console.log(req.body.verifyCode);
       if (req.body.verifyCode && req.session.captchaText !== req.body.verifyCode) {
 
         req.session.loginErrorCount++;
@@ -61,8 +56,6 @@ loginController.actions = {
       let captcha = svgCaptcha.create();
 
       req.session.captchaText = captcha.text;
-
-      console.log(req.session.captchaText);
 
       res.type('svg');
       res.send(captcha.data);
