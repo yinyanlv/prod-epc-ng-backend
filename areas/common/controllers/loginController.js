@@ -1,7 +1,8 @@
 let gu = require('guthrie-js');
 let svgCaptcha = require('svg-captcha');
+let baseController = require('../../../common/baseController');
+let loginController = new gu.controller.inherit(baseController);
 let userModel = require('../../../models/userModel');
-let loginController = new gu.controller.create();
 
 loginController.actions = {
   index: {
@@ -9,7 +10,7 @@ loginController.actions = {
 
       if (!req.session.loginErrorCount) req.session.loginErrorCount = 0;
 
-      if (req.body.verifyCode && req.session.captchaText !== req.body.verifyCode) {
+      if (req.body.verifyCode && req.session.captchaText !== req.body.verifyCode.toLowerCase()) {
 
         req.session.loginErrorCount++;
 
@@ -29,8 +30,11 @@ loginController.actions = {
       if (isExists) {
 
         req.session.loginErrorCount = 0;
+        req.session.userInfo = yield userModel.getUserInfo(req.body.username);
+
         res.send({
-          success: true
+          success: true,
+          userInfo: JSON.parse(req.session.userInfo)
         });
       } else {
 
@@ -51,17 +55,16 @@ loginController.actions = {
   },
 
   captcha: {
-    GET: function(req, res) {
+    GET: (req, res) => {
 
       let captcha = svgCaptcha.create();
 
-      req.session.captchaText = captcha.text;
+      req.session.captchaText = captcha.text.toLowerCase();
 
       res.type('svg');
       res.send(captcha.data);
     }
   }
 };
-
 
 module.exports = loginController;
