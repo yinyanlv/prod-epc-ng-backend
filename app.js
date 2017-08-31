@@ -5,6 +5,7 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let session = require('express-session');
 let MongoStore = require('connect-mongo')(session);
+let cors = require('cors');
 let bodyParser = require('body-parser');
 let compression = require('compression');
 let gu = require('guthrie-js');
@@ -20,14 +21,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // 允许跨域访问
-app.all('*', function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Accept, X-Requested-With');  // 必须匹配且不能使用*
-  res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
-
-  req.method === 'OPTIONS' ? res.sendStatus(200) : next();
-});
-
+app.use(cors({
+  credentials: true
+}));
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -55,7 +51,9 @@ app.use(function (req, res, next) {
 
 // error handler
 app.use(function (err, req, res, next) {
-console.log(err);
+
+  console.log(err);
+
   res.render('master/index');
 });
 

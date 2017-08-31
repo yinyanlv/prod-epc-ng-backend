@@ -1,4 +1,4 @@
-let connectDb = require('../core/connectDb');
+let connectDb = require('./connectDb');
 let config = require('../config');
 
 let db = connectDb(config.dbMap.data);
