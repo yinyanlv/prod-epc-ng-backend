@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(session(Object.assign(config.session, {
-  store: new MongoStore({url: config.dbMap.session})
+  store: new MongoStore({url: config.mongodb.sessionDb})
 })));
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));

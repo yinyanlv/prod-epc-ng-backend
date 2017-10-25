@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 let db = require('../common/db');
-let userDbModel = db.model('user', new mongoose.Schema(), 'user');
+let userDbModel = db.mongodbPool.model('user', new mongoose.Schema(), 'user');
 
 let userModel = {
 
