@@ -23,7 +23,6 @@ function connectMongodb(connectString) {
 
 function connectMysql(connectString) {
 
-
     return new Sequelize(connectString)
         .authenticate()
         .then(() => {
