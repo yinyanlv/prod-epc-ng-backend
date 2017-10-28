@@ -15,8 +15,7 @@ let userService = {
                 .then((user) => {
 
                     console.log(user);
-
-                    resolve(user);
+                    return user ? resolve(true) : resolve(false);
                 })
                 .catch((err) => {
 

@@ -23,16 +23,7 @@ function connectMongodb(connectString) {
 
 function connectMysql(connectString) {
 
-    return new Sequelize(connectString)
-        .authenticate()
-        .then(() => {
-
-            console.log('sequelize has connected to ' + connectString + '!');
-        })
-        .catch((err) => {
-
-            console.log(err);
-        });
+    return new Sequelize(connectString);
 }
 
 const mongodbPool = connectMongodb(config.mongodb.dataDb);
