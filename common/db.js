@@ -36,9 +36,9 @@ function connectMysql(connectString) {
 }
 
 const mongodbPool = connectMongodb(config.mongodb.dataDb);
-const mysqlPool = connectMysql(config.mysql);
+const sequelize = connectMysql(config.mysql);
 
 module.exports = {
     mongodbPool,
-    mysqlPool
+    sequelize
 };

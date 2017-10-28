@@ -1,55 +1,29 @@
-let mongoose = require('mongoose');
-let db = require('../common/db');
-let userDbModel = db.mongodbPool.model('user', new mongoose.Schema(), 'user');
+let Sequelize = require('sequelize');
+let sequelize = require('../common/db').sequelize;
 
-let userModel = {
+let userModel = sequelize.define('User', {
+    id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+        unique: true
+    },
+    username: {
+        type: Sequelize.STRING
+    },
+    password: {
+        type: Sequelize.STRING
+    }
+});
 
-  isExists(username, password) {
-
-    return new Promise((resolve, reject) => {
-
-      userDbModel.find({
-        username,
-        password
-      }, {
-        '_id': 0
-      }, (err, docs) => {
-
-        if (err) {
-          reject(err);
-          return;
-        }
-
-        if (docs.length === 0) {
-          resolve(false);
-          return;
-        }
-
-        resolve(true);
-      });
+userModel
+    .sync()
+    .then(() => {
+        console.log('userModel create success!');
+    })
+    .catch(() => {
+        console.log('userModel create failure!');
     });
-  },
-
-  getUserInfo(username) {
-
-    return new Promise((resolve, reject) => {
-
-      userDbModel.find({
-        username
-      }, {
-        '_id': 0
-      }, (err, docs) => {
-
-        if (err) {
-          reject(err);
-          return;
-        }
-
-        resolve(JSON.stringify(docs[0]));
-      });
-    });
-  }
-};
 
 module.exports = userModel;
 

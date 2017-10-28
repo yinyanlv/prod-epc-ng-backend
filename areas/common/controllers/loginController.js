@@ -2,7 +2,7 @@ let gu = require('guthrie-js');
 let svgCaptcha = require('svg-captcha');
 let baseController = require('../../../common/baseController');
 let loginController = new gu.controller.inherit(baseController);
-let userModel = require('../../../models/userModel');
+let userService = require('../../../serivces/userService');
 
 loginController.actions = {
   index: {
@@ -25,12 +25,12 @@ loginController.actions = {
         return;
       }
 
-      let isExists = yield userModel.isExists(req.body.username, req.body.password);
+      let isExists = yield userService.isExists(req.body.username, req.body.password);
 
       if (isExists) {
 
         req.session.loginErrorCount = 0;
-        req.session.userInfo = yield userModel.getUserInfo(req.body.username);
+        req.session.userInfo = yield userService.getUserInfo(req.body.username);
 
         res.send({
           success: true,
