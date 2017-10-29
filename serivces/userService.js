@@ -1,50 +1,47 @@
 let userModel = require('../models/userModel');
 
 let userService = {
-    isExists(username, password) {
+  isExists(username, password) {
 
-        return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
 
-            userModel
-                .findOne({
-                    where: {
-                        username,
-                        password
-                    }
-                })
-                .then((user) => {
+      userModel
+        .findOne({
+          where: {
+            username,
+            password
+          }
+        })
+        .then((user) => {
 
-                    console.log(user);
-                    return user ? resolve(true) : resolve(false);
-                })
-                .catch((err) => {
+          return user ? resolve(true) : resolve(false);
+        })
+        .catch((err) => {
 
-                    reject(err);
-                });
+          reject(err);
         });
-    },
-    getUserInfo(username) {
+    });
+  },
+  getUserInfo(username) {
 
-        return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
 
-            userModel
-                .findOne({
-                    where: {
-                        username
-                    }
-                })
-                .then((user) => {
+      userModel
+        .findOne({
+          where: {
+            username
+          }
+        })
+        .then((user) => {
 
-                    console.log(user);
+          resolve(user.dataValues);
+        })
+        .catch((err) => {
 
-                    resolve(user);
-                })
-                .catch((err) => {
-
-                    reject(err);
-                });
+          reject(err);
         });
-    }
+    });
+  }
 };
 
 module.exports = userService;
