@@ -8,3 +8,5 @@ CREATE TABLE user (
     username varchar(16) NOT NULL,
     password varchar(16) NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+INSERT INTO user (username, password) VALUES ('admin', '111111');

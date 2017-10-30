@@ -1,45 +1,38 @@
-let userModel = require('../models/userModel');
+let mysqlPool = require('../common/db').mysqlPool;
 
 let userService = {
   isExists(username, password) {
 
     return new Promise((resolve, reject) => {
 
-      userModel
-        .findOne({
-          where: {
-            username,
-            password
-          }
-        })
-        .then((user) => {
+      mysqlPool.query(`SELECT count(username) FROM user WHERE username = ? AND password = ?`, [username, password], (err, result) => {
 
-          return user ? resolve(true) : resolve(false);
-        })
-        .catch((err) => {
-
+        if (err) {
           reject(err);
-        });
+        }
+
+        if (result[0]['count(username)'] < 1) {
+
+          resolve(false);
+        } else {
+
+          resolve(true);
+        }
+      });
     });
   },
-  getUserInfo(username) {
+  getUserInfo(username){
 
     return new Promise((resolve, reject) => {
 
-      userModel
-        .findOne({
-          where: {
-            username
-          }
-        })
-        .then((user) => {
+      mysqlPool.query(`SELECT * FROM user WHERE username = ?`, [username], (err, result) => {
 
-          resolve(user.dataValues);
-        })
-        .catch((err) => {
-
+        if (err) {
           reject(err);
-        });
+        }
+
+        resolve(result[0]);
+      });
     });
   }
 };

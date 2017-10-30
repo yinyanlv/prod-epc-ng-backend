@@ -32,6 +32,7 @@ loginController.actions = {
         req.session.loginErrorCount = 0;
 
         let userInfo = yield userService.getUserInfo(req.body.username);
+
         req.session.userInfo = JSON.stringify(userInfo);
 
         res.send({
