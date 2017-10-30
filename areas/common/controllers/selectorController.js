@@ -7,11 +7,11 @@ selectorController.actions = {
   catalog: {
     GET: function*(req, res) {
 
-      let parentLevel = req.query.gradeLevel;
+      let parentGrade = req.query.parentGrade;
       let parentCode = req.query.parentCode;
       let list;
 
-      switch (parentLevel) {
+      switch (parentGrade) {
         case 'g1':
           list = yield catalogService.getGrade2(req, parentCode);
           break;
@@ -29,9 +29,10 @@ selectorController.actions = {
           break;
       }
 
-
-
-      res.send(list);
+      res.send({
+        success: true,
+        list
+      });
     }
   }
 };

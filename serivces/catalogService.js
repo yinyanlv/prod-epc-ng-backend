@@ -20,7 +20,7 @@ let catalogService = {
 
     return new Promise((resolve, reject) => {
 
-      mysqlPool.query(`SELECT code, name_zh as name FROM catalog_grade_2 WHERE parent_code = ?`, [parentCode], (err, result) => {
+      mysqlPool.query(`SELECT code, name_zh as name, img_url as imgUrl FROM catalog_grade_2 WHERE parent_code = ?`, [parentCode], (err, result) => {
 
         if (err) {
           reject(err);
