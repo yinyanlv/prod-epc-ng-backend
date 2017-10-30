@@ -5,13 +5,13 @@ let userService = {
 
     return new Promise((resolve, reject) => {
 
-      mysqlPool.query(`SELECT count(username) FROM user WHERE username = ? AND password = ?`, [username, password], (err, result) => {
+      mysqlPool.query(`SELECT count(account) FROM user WHERE account = ? AND password = ?`, [username, password], (err, result) => {
 
         if (err) {
           reject(err);
         }
 
-        if (result[0]['count(username)'] < 1) {
+        if (result[0]['count(account)'] < 1) {
 
           resolve(false);
         } else {
@@ -25,7 +25,7 @@ let userService = {
 
     return new Promise((resolve, reject) => {
 
-      mysqlPool.query(`SELECT * FROM user WHERE username = ?`, [username], (err, result) => {
+      mysqlPool.query(`SELECT * FROM user WHERE account = ?`, [username], (err, result) => {
 
         if (err) {
           reject(err);

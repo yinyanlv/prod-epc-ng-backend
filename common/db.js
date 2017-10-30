@@ -23,6 +23,8 @@ function connectMongodb(connectString) {
 
 function connectMysql(connectString) {
 
+  console.log('mysql has connected to ' + connectString + '!');
+
   return mysql.createPool(connectString);
 }
 
